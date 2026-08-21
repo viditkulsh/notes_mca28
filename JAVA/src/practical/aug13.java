@@ -1,5 +1,6 @@
 package practical;
 import java.util.Scanner;
+
 public class aug13 {
     public static void main(String[] args) {
 
@@ -61,3 +62,4 @@ public class aug13 {
         
     }
 }
+

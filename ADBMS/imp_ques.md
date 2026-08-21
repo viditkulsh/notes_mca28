@@ -15,4 +15,5 @@ Q7. Write a short note and mention the difference between the following:
     - Client System Architecture
 Q8. Write a short note/analyze how parallel database architecture is useful in ecommerce.
 
-
+21/08/2026
+Q9. Write a short note on distributed data storage explain in detail distributed transactions 2PC commit protocol.
