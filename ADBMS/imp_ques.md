@@ -17,3 +17,8 @@ Q8. Write a short note/analyze how parallel database architecture is useful in e
 
 21/08/2026
 Q9. Write a short note on distributed data storage explain in detail distributed transactions 2PC commit protocol.
+
+24/08/2026
+Q10. Write a short note for concurrency, locking types.
+Q11. Explain Concurrency Control (CC) in detail.
+Q12. Discuss how CC supports DB control transaction process. 

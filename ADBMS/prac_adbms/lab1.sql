@@ -22,7 +22,7 @@ END;
 $$;
 
 
--- CALL insert_stud ('Harry Potter', 'Potions', 1, 99);
+CALL insert_stud ('Mcqueen', 'Racing', 1, 99);
 -- CALL insert_stud ('Tyrion Lannister', 'MCA', 1, 100);
 -- CALL insert_stud ('Arya Stark', 'MCA', 1, 75);
 -- CALL insert_stud ('Hodor', 'MCA', 1, 40);
@@ -52,21 +52,21 @@ $$;
 -- CALL update_stud(1, 'Jon Snow', 'MCA', 1, 40);
 -- select * FROM student;
 
---procedure to update student marks
-create or replace procedure update_stud_id(
-    p_course VARCHAR(50),
-    u_id INT
-)
-language plpgsql
-as $$
-BEGIN
-    UPDATE student
-    SET stud_id = u_id
-    WHERE course = p_course;
-END;
-$$;
-call update_stud_id('Potions', 1);
+-- --procedure to update student marks
+-- create or replace procedure update_stud_id(
+--     p_course VARCHAR(50),
+--     u_id INT
+-- )
+-- language plpgsql
+-- as $$
+-- BEGIN
+--     UPDATE student
+--     SET stud_id = u_id
+--     WHERE course = p_course;
+-- END;
+-- $$;
+-- call update_stud_id('Potions', 1);
 
-select * FROM student;
+-- select * FROM student;
 
 
