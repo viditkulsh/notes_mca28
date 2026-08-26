@@ -1,6 +1,6 @@
 # MITWPU MCA '28 — Student Notes
 
-![Repository views](https://komarev.com/ghpvc/?username=viditkulsh&repo=mitwpu-mca28&label=Repository%20views&color=blue&style=flat)
+![Repository views](https://hits.sh/github.com/viditkulsh/mitwpu-mca28.svg?label=Repository%20views&color=blue)
 
 Unofficial, student-maintained notes for the MCA (2026–28 batch) at MIT World Peace University.
 
