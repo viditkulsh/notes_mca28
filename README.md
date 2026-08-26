@@ -1,5 +1,7 @@
 # MITWPU MCA '28 — Student Notes
 
+![Repository views](https://komarev.com/ghpvc/?username=viditkulsh&repo=mitwpu-mca28&label=Repository%20views&color=blue&style=flat)
+
 Unofficial, student-maintained notes for the MCA (2026–28 batch) at MIT World Peace University.
 
 These are **not** official course materials — they're personal notes, practice programs, and important questions collected by students while going through the course. Use them as a supplement to your own study, and expect the occasional mistake.
