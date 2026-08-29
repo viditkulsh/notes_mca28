@@ -8,12 +8,39 @@ These are **not** official course materials — they're personal notes, practice
 
 ## What's inside
 
-| Folder | Contents |
-| --- | --- |
-| [ADBMS/](ADBMS/) | Advanced DBMS — important questions and SQL lab practicals (procedures, triggers, etc.) |
-| [JAVA/](JAVA/) | Java programs and notes (source in `src/`) |
-| [Python/](Python/) | Python programs — data types, strings, arrays, dicts, and important questions |
-| [Research_Methodology/](Research_Methodology/) | Useful links and references for Research Methodology |
+| Folder | Subject | Contents |
+| --- | --- | --- |
+| [ADBMS/](ADBMS/) | Advanced DBMS | [Important questions](ADBMS/imp_ques.md) by lecture date, and SQL lab practicals — stored procedures, triggers, and a local Supabase/PostgreSQL setup |
+| [JAVA/](JAVA/) | Java | Theory [notes](JAVA/src/theory/notes.md) plus source under `src/` — `theory/` for concept demos (arrays, loops, utilities) and `practical/` for lab programs |
+| [Python/](Python/) | Python | Programs covering data types, strings, arrays, dictionaries, and important questions |
+| [Research_Methodology/](Research_Methodology/) | Research Methodology | Reference links and reading material on paper structure and the research gap framework |
+| [peace/](peace/) | Peace Studies | Submission links and deadlines for CCA assignments |
+
+## Repository layout
+
+```
+mitwpu-mca28/
+├── ADBMS/
+│   ├── imp_ques.md          # important questions, grouped by date
+│   └── prac_adbms/          # SQL labs (*.sql) + local Supabase config
+├── JAVA/
+│   └── src/
+│       ├── theory/          # concept demos and notes.md
+│       └── practical/       # lab programs, named lab<n>_<date>.java
+├── Python/                  # standalone .py programs per topic
+├── Research_Methodology/    # links and PDFs
+└── peace/                   # submission dates and links
+```
+
+## Running the code
+
+- **Java** — compile and run from the `JAVA/` folder:
+  ```bash
+  javac -d bin src/theory/arrays/Array.java
+  java -cp bin theory.arrays.Array
+  ```
+- **Python** — each file is standalone: `python3 Python/Strings.py`
+- **SQL** — see [ADBMS/prac_adbms/](ADBMS/prac_adbms/) for the local PostgreSQL connection command.
 
 ## Contributing
 
