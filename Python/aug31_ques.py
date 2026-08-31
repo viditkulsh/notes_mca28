@@ -110,3 +110,19 @@ elif operator == "**":
     print(f"The result is {num1 ** num2}.")
 else:
     print("Invalid operator.")
+
+
+
+# 12. Display discount based on purchase amount. Amount >= 5000 ==> 20% discount, Amount >= 3000 ==>15% discount, Amount >= 1000 ==> 10% discount, Below 1000
+amount = float(input("Enter the purchase amount: "))
+if amount >= 5000:
+    discount = amount * 0.20
+    print(f"You get a 20% discount. Discount amount: {discount}. Final amount to pay: {amount - discount}.")
+elif amount >= 3000:
+    discount = amount * 0.15
+    print(f"You get a 15% discount. Discount amount: {discount}. Final amount to pay: {amount - discount}.")
+elif amount >= 1000:
+    discount = amount * 0.10
+    print(f"You get a 10% discount. Discount amount: {discount}. Final amount to pay: {amount - discount}.")
+else:
+    print("No discount available. Final amount to pay: {amount}.")
