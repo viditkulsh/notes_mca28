@@ -43,3 +43,9 @@ Questions marked as important during Advanced DBMS lectures, grouped by the date
 10. Write a short note on Concurrency and the types of Locking.
 11. Explain Concurrency Control (CC) in detail.
 12. Discuss how Concurrency Control supports the database transaction process.
+
+## 31 Aug 2026 — OOPS
+
+13. Discuss how OOPSDBMS is different from RDBMS. Explaing using a real world example.
+14. Write down about object oriented struct and Attribute/Method/Relationships.
+15. Create OID for students and print values of 2 different students.
