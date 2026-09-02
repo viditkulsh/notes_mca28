@@ -1,7 +1,8 @@
-create TABLE stud(
+-- 4. Write down DML trigger to raise the error violating Check Constraints
+create TABLE if not exists stud(
     stud_id Serial Primary Key,
     stud_name Varchar(100) Not Null,
-    email VARCHAR(100) Not Null,
+    email VARCHAR(100) Not Null
 );
 
 create or replace function check_dup_stud()
@@ -17,6 +18,8 @@ begin
     return new;
 end;
 $$ language plpgsql;
+
+drop trigger if exists trg_check_dup_stud on stud;
 
 create trigger trg_check_dup_stud
 before insert on stud
