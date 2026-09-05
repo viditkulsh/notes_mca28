@@ -4,6 +4,8 @@ Questions marked as important during Advanced DBMS lectures, grouped by the date
 
 > Student-collected, not an official question bank. Verify against your own class notes before relying on it for an exam.
 
+Structured answers to all of these: [Ques_bank_Answers.md](Ques_bank_Answers.md).
+
 ## Contents
 
 - [10 Aug 2026 — Database & Client-Server Architecture](#10-aug-2026--database--client-server-architecture)
@@ -11,6 +13,7 @@ Questions marked as important during Advanced DBMS lectures, grouped by the date
 - [18 Aug 2026 — Replication, Proxies & Parallel Databases](#18-aug-2026--replication-proxies--parallel-databases)
 - [21 Aug 2026 — Distributed Storage & Transactions](#21-aug-2026--distributed-storage--transactions)
 - [24 Aug 2026 — Concurrency Control](#24-aug-2026--concurrency-control)
+- [31 Aug 2026 — OOPS](#31-aug-2026--oops)
 
 ---
 
@@ -48,6 +51,3 @@ Questions marked as important during Advanced DBMS lectures, grouped by the date
 
 13. Discuss how OOPSDBMS is different from RDBMS. Explaing using a real world example.
 14. Write down about object oriented struct and Attribute/Method/Relationships.
-15. Create OID for students and print values of 2 different students.
-
-
