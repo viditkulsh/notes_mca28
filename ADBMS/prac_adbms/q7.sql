@@ -1,4 +1,4 @@
--- Q8) Create a table of 10 names, sorted into ascending order by a trigger.
+-- Q7) Create a table of 10 names, sorted into ascending order by a trigger.
 --     Insert one more name, then rename the name in the 3rd row -- both times
 --     the trigger re-sorts the table.
 
