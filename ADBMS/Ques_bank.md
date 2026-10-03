@@ -52,6 +52,7 @@ Structured answers to all of these: [Ques_bank_Answers.md](Ques_bank_Answers.md)
 13. Discuss how OOPSDBMS is different from RDBMS. Explaing using a real world example.
 14. Write down about object oriented struct and Attribute/Method/Relationships.
 
+# 
 
 ## UNIT - 1
 1. Draw a Database System Architecture
