@@ -52,45 +52,42 @@ Structured answers to all of these: [Ques_bank_Answers.md](Ques_bank_Answers.md)
 13. Discuss how OOPSDBMS is different from RDBMS. Explaing using a real world example.
 14. Write down about object oriented struct and Attribute/Method/Relationships.
 
-# 8 Marks Question:  
+
+## UNIT - 1
+1. Draw a Database System Architecture
+			Or
+1. Write a short note on Database System Architecture
+			Or 
+1. Difference b/w Database System Architecture and Client Server Architecture.
+2. Write a short note for client server architecture.
+3. Difference b/w System Server and CIient Server.
+4. Write a Short note of Server System with neat and clean diagram.
+         Or
+4. Explain layers of Server System Architecture.
+5. Difference b/w Distributed System Architecture, Parallel System and Server System Architecture.
+6. Write a Short note on Distributed System Architecture .
+
+
+
+## UNIT - 2
+1. Write down a short note on types of I/O parallelism. And why it is needed, Advantages & Disadvantages and Limitation.
+2. Explain without I/O parallel system verses with I/O parallel system Database.
+3. Write down the difference b/w Inter & Intra Query Parallelism.
+4. Write a short note on Inter Query Parallelism.
+5. Write a short note on Intra 
+6. Discuss how database storage is handled in a distributed database system. How is data consistency maintained in distributed storage?
+7. Explain the Two-Phase Commit (2PC) Protocol. How does it ensure atomicity and consistency in distributed transactions?
+8. Write a short note on Distributed Transactions and explain the Two-Phase Commit (2PC) Protocol.
+9. Write a short note on Concurrency Control. How does concurrency control help maintain database consistency and keep the database up to date?
+10. Write a short note on the types of schedules in Concurrency Control . Explain how a scheduler helps resolve conflicts and ensure serializability. Draw a suitable diagram and explain with a real-time example.
+
+
+
+## UNIT - 3
+1. What is the Difference Between DBMS & OOS?
+2. Discuss Object Structure using example of OID.
+3. Write types of Constructor and give example of Constructor in OODBMS.
+
+### 8 Marks Question:  
 1. Create a constructor for a class "Student" that initializes the student's name and roll number, and a method to display the student's details. Also create a constructor for "Teacher" that initializes the teacher's name and subject, and a method to display the teacher's details. Create a university table that stores both student and teacher details using tuple constructors, and display all the details from it.
 Structured answers to all of these: [uni.sql](theo_adbms/uni.sql)
-
-
-
-Advanced Database Management System
-UNIT - 1
-Questioner :- 
-Q1. Draw a Database System Architecture
-			Or
-Q1. Write a short note on Database System Architecture
-			Or 
-Q1. Difference b/w Database System Architecture and Client Server Architecture.
-Q2. Write a short note for client server architecture.
-Q3. Difference b/w System Server and CIient Server.
-Q4. Write a Short note of Server System with neat and clean diagram.
-         Or
-Q4. Explain layers of Server System Architecture.
-Q5. Difference b/w Distributed System Architecture, Parallel System and Server System Architecture.
-Q6. Write a Short note on Distributed System Architecture .
-
-
-
-UNIT - 2
-Q1. Write down a short note on types of I/O parallelism. And why it is needed, Advantages & Disadvantages and Limitation.
-Q2. Explain without I/O parallel system verses with I/O parallel system Database.
-Q3. Write down the difference b/w Inter & Intra Query Parallelism.
-Q4. Write a short note on Inter Query Parallelism.
-Q5. Write a short note on Intra 
-Q6. Discuss how database storage is handled in a distributed database system. How is data consistency maintained in distributed storage?
-Q7. Explain the Two-Phase Commit (2PC) Protocol. How does it ensure atomicity and consistency in distributed transactions?
-Q8. Write a short note on Distributed Transactions and explain the Two-Phase Commit (2PC) Protocol.
-Q9. Write a short note on Concurrency Control. How does concurrency control help maintain database consistency and keep the database up to date?
-Q10. Write a short note on the types of schedules in Concurrency Control . Explain how a scheduler helps resolve conflicts and ensure serializability. Draw a suitable diagram and explain with a real-time example.
-
-
-
-UNIT - 3
-Q1. What is the Difference Between DBMS & OOS?
-Q2. Discuss Object Structure using example of OID.
-Q3. Write types of Constructor and give example of Constructor in OODBMS.
