@@ -1,1 +1,15 @@
-The syllabus for the examination will be: *Overview of Computer Networks, OSI and TCP/IP Reference Models, Guided and Unguided Transmission Media, Framing, Error Detection and Error Correction, Vertical Redundancy Check (VRC), Longitudinal Redundancy Check (LRC), Hamming Distance, Hamming Code, and Cyclic Redundancy Check (CRC),Checksum*.
+# DCN — Exam Syllabus
+
+The syllabus for the examination will be:
+
+- Overview of Computer Networks
+- OSI and TCP/IP Reference Models
+- Guided and Unguided Transmission Media
+- Framing
+- Error Detection and Error Correction
+- Vertical Redundancy Check (VRC)
+- Longitudinal Redundancy Check (LRC)
+- Hamming Distance
+- Hamming Code
+- Cyclic Redundancy Check (CRC)
+- Checksum

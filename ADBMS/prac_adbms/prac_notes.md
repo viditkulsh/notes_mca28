@@ -27,7 +27,7 @@ Ports come from [supabase/config.toml](supabase/config.toml). Note which speak *
 
 Open **<http://127.0.0.1:54423>** — it redirects to `/project/default`.
 
-Use the **Table Editor** to browse and edit rows in `student`, `stud`, and `stud_tab`, or the **SQL Editor** to run queries without leaving the browser.
+Use the **Table Editor** to browse and edit rows in the tables the labs create (`student`, `employee`, `friends`, `marks`, `waitress`, `students`), or the **SQL Editor** to run queries without leaving the browser.
 
 ## Run a SQL file
 
@@ -38,7 +38,7 @@ psql "postgresql://postgres:postgres@127.0.0.1:54422/postgres" -f <filename>.sql
 Replace `<filename>.sql` with the lab you want to execute, for example:
 
 ```bash
-psql "postgresql://postgres:postgres@127.0.0.1:54422/postgres" -f lab1.sql
+psql "postgresql://postgres:postgres@127.0.0.1:54422/postgres" -f q1.sql
 ```
 
 ## Open an interactive session
@@ -55,8 +55,13 @@ Handy meta-commands once inside: `\dt` (list tables), `\df` (list functions and 
 
 | File | Topic |
 | --- | --- |
-| [lab1.sql](lab1.sql) | `student` table and the `insert_stud` stored procedure |
-| [lab3.sql](lab3.sql) | `stud` table with a `BEFORE INSERT` trigger rejecting duplicate emails |
+| [q1.sql](q1.sql) | `student` table with the `insert_stud` and `update_stud` stored procedures |
+| [q2.sql](q2.sql) | `employee` table — stored procedures `update_salary` and `update_dept` that take the new values as parameters |
+| [q3.sql](q3.sql) | `friends` table with a `BEFORE INSERT` trigger rejecting duplicate emails |
+| [q4.sql](q4.sql) | `marks` table with a `BEFORE INSERT OR UPDATE` trigger enforcing a score of 0–100 (a check constraint written as a trigger) |
+| [q5.sql](q5.sql) | `waitress` table with a statement-level `AFTER DELETE` trigger blocking deletes of more than one row |
+| [q6.sql](q6.sql) | `students` table with 100 generated rows — query performance before and after creating an index |
+| [q7.sql](q7.sql) | `students` table of 10 names kept in ascending order by a trigger |
 | [trigger.sql](trigger.sql) | Trigger programming — duplicate `stud_id` check (MySQL-style syntax) |
 
 ## Gotchas
@@ -72,5 +77,5 @@ Handy meta-commands once inside: `\dt` (list tables), `\df` (list functions and 
 
   Prefer that over `supabase stop && supabase start`, which tears the stack down and round-trips the database through a dump/restore.
 - `supabase_imgproxy_prac_adbms` was never created in this project. It only serves storage image transformations, so it is irrelevant to the SQL labs; `supabase stop && supabase start` would create it if ever needed.
-- `trigger.sql` uses MySQL syntax (`SIGNAL SQLSTATE`, `DELIMITER`) and will not run on PostgreSQL as-is. The PostgreSQL equivalent is a `plpgsql` trigger function raising an exception — see `check_dup_stud()` in [lab3.sql](lab3.sql).
+- `trigger.sql` uses MySQL syntax (`SIGNAL SQLSTATE`, `DELIMITER`) and will not run on PostgreSQL as-is. The PostgreSQL equivalent is a `plpgsql` trigger function raising an exception — see `check_duplicate_email()` in [q3.sql](q3.sql).
 - Re-running a lab file fails if the objects already exist. Drop them first, or use `CREATE OR REPLACE` for functions and procedures.
