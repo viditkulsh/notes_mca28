@@ -25,14 +25,14 @@ Ports come from [supabase/config.toml](supabase/config.toml). Note which speak *
 
 ## View the database in a browser
 
-Open **<http://127.0.0.1:54423>** — it redirects to `/project/default`.
+Open **<http://127.0.0.1:5432>** — it redirects to `/project/default`.
 
 Use the **Table Editor** to browse and edit rows in the tables the labs create (`student`, `employee`, `friends`, `marks`, `waitress`, `students`), or the **SQL Editor** to run queries without leaving the browser.
 
 ## Run a SQL file
 
 ```bash
-psql "postgresql://postgres:postgres@127.0.0.1:54422/postgres" -f <filename>.sql
+psql "postgresql://postgres:postgres@127.0.0.1:5432/postgres" -f <filename>.sql
 ```
 
 Replace `<filename>.sql` with the lab you want to execute, for example:
