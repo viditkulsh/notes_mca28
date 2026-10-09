@@ -55,6 +55,7 @@ purpose.
                                                   is the largest example
   -----------------------------------------------------------------------
 
+---
 ``` mermaid
 flowchart TB
     PAN["PAN: personal devices"]
