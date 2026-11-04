@@ -25,14 +25,14 @@ Ports come from [supabase/config.toml](supabase/config.toml). Note which speak *
 
 ## View the database in a browser
 
-Open **<http://127.0.0.1:5432>** — it redirects to `/project/default`.
+Open **<http://127.0.0.1:54423>** — it redirects to `/project/default`.
 
 Use the **Table Editor** to browse and edit rows in the tables the labs create (`student`, `employee`, `friends`, `marks`, `waitress`, `students`), or the **SQL Editor** to run queries without leaving the browser.
 
 ## Run a SQL file
 
 ```bash
-psql "postgresql://postgres:postgres@127.0.0.1:5432/postgres" -f <filename>.sql
+psql "postgresql://postgres:postgres@127.0.0.1:54422/postgres" -f <filename>.sql
 ```
 
 Replace `<filename>.sql` with the lab you want to execute, for example:
@@ -62,6 +62,9 @@ Handy meta-commands once inside: `\dt` (list tables), `\df` (list functions and 
 | [q5.sql](q5.sql) | `waitress` table with a statement-level `AFTER DELETE` trigger blocking deletes of more than one row |
 | [q6.sql](q6.sql) | `students` table with 100 generated rows — query performance before and after creating an index |
 | [q7.sql](q7.sql) | `students` table of 10 names kept in ascending order by a trigger |
+| [q8.sql](q8.sql) | `staff` → `staff_top5` — stored procedure `copy_first_five` copying the first five rows (by `emp_id`) into another table |
+| [q9.sql](q9.sql) | `emp` table — function `higher_salaried(emp_id, name)` printing and returning everyone who earns more than that employee |
+| [q10.sql](q10.sql) | `person` → `name_parts` — function `copy_name_part('first' / 'middle' / 'last')` cutting one part out of each full name and copying it into another table |
 | [trigger.sql](trigger.sql) | Trigger programming — duplicate `stud_id` check (MySQL-style syntax) |
 
 ## Gotchas
