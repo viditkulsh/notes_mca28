@@ -1,59 +1,27 @@
--- Compare results before and after indexing by considering any sample table
+-- Q7) Compare results before and after indexing by considering any sample table
 
--- Compare results before and after indexing
+drop table if exists employees;
 
--- Create sample table
-DROP TABLE IF EXISTS employees;
-
-CREATE TABLE employees (
-    emp_id      SERIAL PRIMARY KEY,
-    emp_name    VARCHAR(50),
-    department  VARCHAR(50),
-    salary      NUMERIC(10,2)
+create table employees(
+    emp_id   INT Primary Key,
+    emp_name VARCHAR(50),
+    salary   INT
 );
 
--- Insert sample data
-INSERT INTO employees (emp_name, department, salary)
-SELECT
-    'Employee_' || generate_series,
-    CASE
-        WHEN generate_series % 4 = 0 THEN 'IT'
-        WHEN generate_series % 4 = 1 THEN 'HR'
-        WHEN generate_series % 4 = 2 THEN 'Finance'
-        ELSE 'Sales'
-    END,
-    30000 + (generate_series * 100)
-FROM generate_series(1, 1000);
-
-COMMIT;
+-- 1,00,000 rows so the difference is easy to see
+insert into employees
+select i, 'Employee_' || i, 30000 + i
+from generate_series(1, 100000) as i;
 
 
--- BEFORE INDEXING
+-- BEFORE indexing: Seq Scan (checks every row)
+explain analyze
+select * from employees where emp_name = 'Employee_50000';
 
-EXPLAIN ANALYZE
-SELECT *
-FROM employees
-WHERE department = 'IT';
+create index idx_emp_name on employees(emp_name);
 
+-- AFTER indexing: Index Scan (goes straight to the row)
+explain analyze
+select * from employees where emp_name = 'Employee_50000';
 
--- CREATE INDEX
-
-CREATE INDEX idx_employees_department
-ON employees(department);
-
-
--- AFTER INDEXING
-
-EXPLAIN ANALYZE
-SELECT *
-FROM employees
-WHERE department = 'IT';
-
-
--- Display index information
-
-SELECT
-    indexname,
-    indexdef
-FROM pg_indexes
-WHERE tablename = 'employees';
+-- Compare the "Execution Time" of both outputs.

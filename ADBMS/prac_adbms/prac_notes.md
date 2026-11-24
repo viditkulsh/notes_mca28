@@ -61,10 +61,10 @@ Handy meta-commands once inside: `\dt` (list tables), `\df` (list functions and 
 | [q4.sql](q4.sql) | `marks` table with a `BEFORE INSERT OR UPDATE` trigger enforcing a score of 0–100 (a check constraint written as a trigger) |
 | [q5.sql](q5.sql) | `waitress` table with a statement-level `AFTER DELETE` trigger blocking deletes of more than one row |
 | [q6.sql](q6.sql) | `students` table with 100 generated rows — query performance before and after creating an index |
-| [q7.sql](q7.sql) | `students` table of 10 names kept in ascending order by a trigger |
-| [q8.sql](q8.sql) | `staff` → `staff_top5` — stored procedure `copy_first_five` copying the first five rows (by `emp_id`) into another table |
-| [q9.sql](q9.sql) | `emp` table — function `higher_salaried(emp_id, name)` printing and returning everyone who earns more than that employee |
-| [q10.sql](q10.sql) | `person` → `name_parts` — function `copy_name_part('first' / 'middle' / 'last')` cutting one part out of each full name and copying it into another table |
+| [q7.sql](q7.sql) | `employees` table with 1,00,000 generated rows — `EXPLAIN ANALYZE` before and after an index on `emp_name` |
+| [q8.sql](q8.sql) | `staff` → `staff_copy` — stored procedure `copy_first_five` copying the first five rows (by `emp_id`) into another table |
+| [q9.sql](q9.sql) | `emp` table — function `higher_salaried(emp_id, name)` printing everyone who earns more than that employee |
+| [q10.sql](q10.sql) | `person` → `name_part` — function `copy_name_part(1 / 2 / 3)` copying the first, middle or last name of each person into another table |
 | [trigger.sql](trigger.sql) | Trigger programming — duplicate `stud_id` check (MySQL-style syntax) |
 
 ## Gotchas
